@@ -8,7 +8,7 @@ pipeline {
         }
         stage('checkout') {
             steps {
-                git branch: 'main', credentialsId: 'Github', url: 'https://github.com/MetehanKarakorukPXL/calculator-app-finished'                
+                git branch: 'main', credentialsId: 'github', url: 'https://github.com/MetehanKarakorukPXL/calculator-app-finished'                
                 sh 'ls -lah'
             }
         }
